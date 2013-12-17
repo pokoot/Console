@@ -22,7 +22,7 @@ class Console implements Command
      * @var array
      * @access private
      */
-    private $buffer = Array();
+    private $buffer = array();
 
     /**
      * Display the message in the browsers console.
@@ -87,13 +87,12 @@ class Console implements Command
      */
     public function header($content, $color = "blue", $background = "white")
     {
-        return array_push($this->buffer,
-            array(
-                    "action"        => "HEADER",
-                    "content"       => $content,
-                    "color"         => $color,
-                    "background"    => $background
-                ));
+        return array_push($this->buffer, array(
+                                            "action"        => "HEADER",
+                                            "content"       => $content,
+                                            "color"         => $color,
+                                            "background"    => $background
+                                         ));
     }
 
 
