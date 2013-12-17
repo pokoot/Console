@@ -2,7 +2,7 @@
 
 namespace Goldfinger;
 
-Interface Command
+interface Command
 {
     public function log($content);
     public function error($content);

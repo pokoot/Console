@@ -109,11 +109,11 @@ class Console implements Command
 
         $html = "";
 
-        foreach ($this->buffer AS $data) {
+        foreach ($this->buffer as $data) {
 
             $content = (is_array($data['content'])) ? json_encode($data['content']) : $data['content'];
             $content = str_replace(array("\r\n", "\r", "\n"), '\n', $content);
-            $content = str_replace("'","\\'", $content);
+            $content = str_replace("'", "\\'", $content);
 
             switch ($data['action']) {
                 case "LOG":
