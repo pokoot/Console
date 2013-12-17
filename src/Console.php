@@ -5,7 +5,7 @@ namespace Goldfinger;
 use Goldfinger\Command;
 
 /**
- * Print from php to the Javascript console.
+ * Prints php messages to the Javascript console.
  *
  * @uses Command
  * @package
@@ -111,7 +111,8 @@ class Console implements Command
 
         foreach ($this->buffer AS $data) {
 
-            $content = str_replace(array("\r\n", "\r", "\n"), '\n', $data['content']);
+            $content = (is_array($data['content'])) ? json_encode($data['content']) : $data['content'];
+            $content = str_replace(array("\r\n", "\r", "\n"), '\n', $content);
             $content = str_replace("'","\\'", $content);
 
             switch ($data['action']) {
