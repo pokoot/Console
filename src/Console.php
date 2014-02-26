@@ -42,7 +42,7 @@ class Console implements Command
      *
      * @access public
      * @param mixed $content
-     * @return void
+     * @return array
      */
     public function error($content)
     {
@@ -55,7 +55,7 @@ class Console implements Command
      *
      * @access public
      * @param mixed $content
-     * @return void
+     * @return array
      */
     public function warn($content)
     {
@@ -83,7 +83,7 @@ class Console implements Command
      * @param mixed $content
      * @param string $color
      * @param string $background
-     * @return void
+     * @return array
      */
     public function header($content, $color = "blue", $background = "white")
     {
