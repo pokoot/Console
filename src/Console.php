@@ -5,7 +5,7 @@ namespace Goldfinger;
 /**
  * Class Console
  *
- * Prints php messages to the Javascript console.
+ * Prints PHP messages to the Javascript console.
  *
  * @package Goldfinger
  * @author Harold Kim
