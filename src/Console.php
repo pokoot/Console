@@ -2,14 +2,12 @@
 
 namespace Goldfinger;
 
-use Goldfinger\Command;
-
 /**
+ * Class Console
+ *
  * Prints php messages to the Javascript console.
  *
- * @uses Command
- * @package
- * @version $id$
+ * @package Goldfinger
  * @author Harold Kim
  * @license http://pokoot.com/license.txt
  */
